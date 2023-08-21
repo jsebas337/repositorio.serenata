@@ -21,7 +21,7 @@ void agregarAlumno(vector<Alumno>& listaAlumnos, Alumno alumno) {
 // Función para mostrar la lista de alumnos
 void mostrarAlumnos(const vector<Alumno>& listaAlumnos) {
     for (const Alumno& alumno : listaAlumnos) {
-        cout << "Código: " << alumno.codigo << endl;
+        cout << "Codigo: " << alumno.codigo << endl;
         cout << "Nombre: " << alumno.nombre << " " << alumno.apellido << endl;
         cout << "Carrera: " << alumno.carrera << endl;
         cout << "Estado: " << (alumno.estado ? "Activo" : "Inactivo") << endl;
@@ -64,7 +64,7 @@ int main() {
 
         if (opcion == 1) {
             Alumno nuevoAlumno;
-            cout << "Ingrese código: ";
+            cout << "Ingrese codigo: ";
             cin >> nuevoAlumno.codigo;
             cout << "Ingrese nombre: ";
             cin >> nuevoAlumno.nombre;
@@ -80,7 +80,7 @@ int main() {
         } else if (opcion == 3) {
             guardarAlumnosEnArchivo(listaAlumnos, archivo);
         } else {
-            cout << "Opción inválida. Intente nuevamente." << endl;
+            cout << "Opción invalida. Intente nuevamente." << endl;
         }
     } while (opcion != 3);
 
